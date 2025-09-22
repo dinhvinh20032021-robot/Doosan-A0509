@@ -1,0 +1,8 @@
+prefix=/home/vinh/catkin_ws/install
+
+Name: moveit_config_m0609
+Description: Description of moveit_config_m0609
+Version: 1.2.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<robot name="colored_table" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!-- Bàn 4 chân: visual dùng OBJ+MTL, collision dùng STL -->
+  <link name="table_link">
+
+    <visual>
+      <origin xyz="0 0 0.75" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://my_table_description/meshes/table.obj"
+              scale="1 1 1"/>
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0.75" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://my_table_description/meshes/table.stl"
+              scale="1 1 1"/>
+      </geometry>
+    </collision>
+
+  </link>
+
+  <!-- Cố định bàn vào world, chỉnh xyz cho phù hợp -->
+  <joint name="table_fixed_joint" type="fixed">
+    <parent link="world"/>
+    <child  link="table_link"/>
+    <origin xyz="0.8 0 0" rpy="0 0 0"/>
+  </joint>
+
+</robot>

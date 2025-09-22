@@ -1,0 +1,6 @@
+serial
+/home/vinh/catkin_ws/devel/.private/serial/lib/libserial.so /home/vinh/catkin_ws/devel/lib/libserial.so
+/home/vinh/catkin_ws/devel/.private/serial/lib/pkgconfig/serial.pc /home/vinh/catkin_ws/devel/lib/pkgconfig/serial.pc
+/home/vinh/catkin_ws/devel/.private/serial/lib/serial/serial_example /home/vinh/catkin_ws/devel/lib/serial/serial_example
+/home/vinh/catkin_ws/devel/.private/serial/share/serial/cmake/serialConfig.cmake /home/vinh/catkin_ws/devel/share/serial/cmake/serialConfig.cmake
+/home/vinh/catkin_ws/devel/.private/serial/share/serial/cmake/serialConfig-version.cmake /home/vinh/catkin_ws/devel/share/serial/cmake/serialConfig-version.cmake

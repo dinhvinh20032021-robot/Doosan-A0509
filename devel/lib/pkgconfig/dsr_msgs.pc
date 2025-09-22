@@ -1,0 +1,8 @@
+prefix=/home/vinh/catkin_ws/devel
+
+Name: dsr_msgs
+Description: Description of dsr_msgs
+Version: 1.2.0
+Cflags: -I/home/vinh/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs message_runtime

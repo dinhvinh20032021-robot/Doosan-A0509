@@ -1,0 +1,5 @@
+doosan-robot/dsr_control
+/home/vinh/catkin_ws/devel/.private/dsr_control/lib/pkgconfig/dsr_control.pc /home/vinh/catkin_ws/devel/lib/pkgconfig/dsr_control.pc
+/home/vinh/catkin_ws/devel/.private/dsr_control/lib/dsr_control/dsr_control_node /home/vinh/catkin_ws/devel/lib/dsr_control/dsr_control_node
+/home/vinh/catkin_ws/devel/.private/dsr_control/share/dsr_control/cmake/dsr_controlConfig-version.cmake /home/vinh/catkin_ws/devel/share/dsr_control/cmake/dsr_controlConfig-version.cmake
+/home/vinh/catkin_ws/devel/.private/dsr_control/share/dsr_control/cmake/dsr_controlConfig.cmake /home/vinh/catkin_ws/devel/share/dsr_control/cmake/dsr_controlConfig.cmake

@@ -1,0 +1,4 @@
+doosan-robot/dsr_description
+/home/vinh/catkin_ws/devel/.private/dsr_description/lib/pkgconfig/dsr_description.pc /home/vinh/catkin_ws/devel/lib/pkgconfig/dsr_description.pc
+/home/vinh/catkin_ws/devel/.private/dsr_description/share/dsr_description/cmake/dsr_descriptionConfig.cmake /home/vinh/catkin_ws/devel/share/dsr_description/cmake/dsr_descriptionConfig.cmake
+/home/vinh/catkin_ws/devel/.private/dsr_description/share/dsr_description/cmake/dsr_descriptionConfig-version.cmake /home/vinh/catkin_ws/devel/share/dsr_description/cmake/dsr_descriptionConfig-version.cmake

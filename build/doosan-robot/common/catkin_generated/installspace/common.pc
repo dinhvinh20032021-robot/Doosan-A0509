@@ -1,0 +1,8 @@
+prefix=/home/vinh/catkin_ws/install
+
+Name: common
+Description: Description of common
+Version: 1.2.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp gazebo_ros control_toolbox xmlrpcpp

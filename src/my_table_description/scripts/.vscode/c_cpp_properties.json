@@ -1,0 +1,35 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/vinh/catkin_ws/devel/include/**",
+        "/home/vinh/ws_moveit/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/vinh/catkin_ws/src/doosan-robot/common/include/**",
+        "/home/vinh/ws_moveit/src/deep_grasp_demo/deep_grasp_task/include/**",
+        "/home/vinh/catkin_ws/src/doosan-robot/dsr_control/include/**",
+        "/home/vinh/ws_moveit/src/franka_ros/franka_control/include/**",
+        "/home/vinh/ws_moveit/src/franka_ros/franka_example_controllers/include/**",
+        "/home/vinh/ws_moveit/src/franka_ros/franka_gazebo/include/**",
+        "/home/vinh/ws_moveit/src/franka_ros/franka_gripper/include/**",
+        "/home/vinh/ws_moveit/src/franka_ros/franka_hw/include/**",
+        "/home/vinh/ws_moveit/src/moveit_grasps/include/**",
+        "/home/vinh/ws_moveit/src/deep_grasp_demo/moveit_task_constructor_dexnet/include/**",
+        "/home/vinh/ws_moveit/src/deep_grasp_demo/moveit_task_constructor_gpd/include/**",
+        "/home/vinh/catkin_ws/src/moveit_tutorials_a0509/include/**",
+        "/home/vinh/catkin_ws/src/serial/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

@@ -1,0 +1,8 @@
+prefix=/home/vinh/catkin_ws/install
+
+Name: my_table_description
+Description: Description of my_table_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

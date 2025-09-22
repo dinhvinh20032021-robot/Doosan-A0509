@@ -1,0 +1,203 @@
+;; Auto-generated. Do not edit!
+
+
+(when (boundp 'dsr_msgs::ParallelAxis1)
+  (if (not (find-package "DSR_MSGS"))
+    (make-package "DSR_MSGS"))
+  (shadow 'ParallelAxis1 (find-package "DSR_MSGS")))
+(unless (find-package "DSR_MSGS::PARALLELAXIS1")
+  (make-package "DSR_MSGS::PARALLELAXIS1"))
+(unless (find-package "DSR_MSGS::PARALLELAXIS1REQUEST")
+  (make-package "DSR_MSGS::PARALLELAXIS1REQUEST"))
+(unless (find-package "DSR_MSGS::PARALLELAXIS1RESPONSE")
+  (make-package "DSR_MSGS::PARALLELAXIS1RESPONSE"))
+
+(in-package "ROS")
+
+
+
+
+
+(defclass dsr_msgs::ParallelAxis1Request
+  :super ros::object
+  :slots (_x1 _x2 _x3 _axis _ref ))
+
+(defmethod dsr_msgs::ParallelAxis1Request
+  (:init
+   (&key
+    ((:x1 __x1) (make-array 6 :initial-element 0.0 :element-type :float))
+    ((:x2 __x2) (make-array 6 :initial-element 0.0 :element-type :float))
+    ((:x3 __x3) (make-array 6 :initial-element 0.0 :element-type :float))
+    ((:axis __axis) 0)
+    ((:ref __ref) 0)
+    )
+   (send-super :init)
+   (setq _x1 __x1)
+   (setq _x2 __x2)
+   (setq _x3 __x3)
+   (setq _axis (round __axis))
+   (setq _ref (round __ref))
+   self)
+  (:x1
+   (&optional __x1)
+   (if __x1 (setq _x1 __x1)) _x1)
+  (:x2
+   (&optional __x2)
+   (if __x2 (setq _x2 __x2)) _x2)
+  (:x3
+   (&optional __x3)
+   (if __x3 (setq _x3 __x3)) _x3)
+  (:axis
+   (&optional __axis)
+   (if __axis (setq _axis __axis)) _axis)
+  (:ref
+   (&optional __ref)
+   (if __ref (setq _ref __ref)) _ref)
+  (:serialization-length
+   ()
+   (+
+    ;; float64[6] _x1
+    (* 8    6)
+    ;; float64[6] _x2
+    (* 8    6)
+    ;; float64[6] _x3
+    (* 8    6)
+    ;; int8 _axis
+    1
+    ;; int8 _ref
+    1
+    ))
+  (:serialize
+   (&optional strm)
+   (let ((s (if strm strm
+              (make-string-output-stream (send self :serialization-length)))))
+     ;; float64[6] _x1
+     (dotimes (i 6)
+       (sys::poke (elt _x1 i) (send s :buffer) (send s :count) :double) (incf (stream-count s) 8)
+       )
+     ;; float64[6] _x2
+     (dotimes (i 6)
+       (sys::poke (elt _x2 i) (send s :buffer) (send s :count) :double) (incf (stream-count s) 8)
+       )
+     ;; float64[6] _x3
+     (dotimes (i 6)
+       (sys::poke (elt _x3 i) (send s :buffer) (send s :count) :double) (incf (stream-count s) 8)
+       )
+     ;; int8 _axis
+       (write-byte _axis s)
+     ;; int8 _ref
+       (write-byte _ref s)
+     ;;
+     (if (null strm) (get-output-stream-string s))))
+  (:deserialize
+   (buf &optional (ptr- 0))
+   ;; float64[6] _x1
+   (dotimes (i (length _x1))
+     (setf (elt _x1 i) (sys::peek buf ptr- :double)) (incf ptr- 8)
+     )
+   ;; float64[6] _x2
+   (dotimes (i (length _x2))
+     (setf (elt _x2 i) (sys::peek buf ptr- :double)) (incf ptr- 8)
+     )
+   ;; float64[6] _x3
+   (dotimes (i (length _x3))
+     (setf (elt _x3 i) (sys::peek buf ptr- :double)) (incf ptr- 8)
+     )
+   ;; int8 _axis
+     (setq _axis (sys::peek buf ptr- :char)) (incf ptr- 1)
+     (if (> _axis 127) (setq _axis (- _axis 256)))
+   ;; int8 _ref
+     (setq _ref (sys::peek buf ptr- :char)) (incf ptr- 1)
+     (if (> _ref 127) (setq _ref (- _ref 256)))
+   ;;
+   self)
+  )
+
+(defclass dsr_msgs::ParallelAxis1Response
+  :super ros::object
+  :slots (_success ))
+
+(defmethod dsr_msgs::ParallelAxis1Response
+  (:init
+   (&key
+    ((:success __success) nil)
+    )
+   (send-super :init)
+   (setq _success __success)
+   self)
+  (:success
+   (&optional (__success :null))
+   (if (not (eq __success :null)) (setq _success __success)) _success)
+  (:serialization-length
+   ()
+   (+
+    ;; bool _success
+    1
+    ))
+  (:serialize
+   (&optional strm)
+   (let ((s (if strm strm
+              (make-string-output-stream (send self :serialization-length)))))
+     ;; bool _success
+       (if _success (write-byte -1 s) (write-byte 0 s))
+     ;;
+     (if (null strm) (get-output-stream-string s))))
+  (:deserialize
+   (buf &optional (ptr- 0))
+   ;; bool _success
+     (setq _success (not (= 0 (sys::peek buf ptr- :char)))) (incf ptr- 1)
+   ;;
+   self)
+  )
+
+(defclass dsr_msgs::ParallelAxis1
+  :super ros::object
+  :slots ())
+
+(setf (get dsr_msgs::ParallelAxis1 :md5sum-) "f95b1583e6e04ac8d77cbe47de2af332")
+(setf (get dsr_msgs::ParallelAxis1 :datatype-) "dsr_msgs/ParallelAxis1")
+(setf (get dsr_msgs::ParallelAxis1 :request) dsr_msgs::ParallelAxis1Request)
+(setf (get dsr_msgs::ParallelAxis1 :response) dsr_msgs::ParallelAxis1Response)
+
+(defmethod dsr_msgs::ParallelAxis1Request
+  (:response () (instance dsr_msgs::ParallelAxis1Response :init)))
+
+(setf (get dsr_msgs::ParallelAxis1Request :md5sum-) "f95b1583e6e04ac8d77cbe47de2af332")
+(setf (get dsr_msgs::ParallelAxis1Request :datatype-) "dsr_msgs/ParallelAxis1Request")
+(setf (get dsr_msgs::ParallelAxis1Request :definition-)
+      "#____________________________________________________________________________________________
+# parallel_axis(x1, x2, x3, axis, ref)  
+#____________________________________________________________________________________________
+
+float64[6] x1                # task pos(posx)  
+float64[6] x2                # task pos(posx)  
+float64[6] x3                # task pos(posx)
+int8       axis              # DR_AXIS_X(0), DR_AXIS_Y(1), DR_AXIS_Z(2) 
+int8       ref        #= 0   # DR_BASE(0), DR_WORLD(2), user coord(101~200)
+                             # <ref is only available in M2.40 or later> 
+---
+bool       success 
+")
+
+(setf (get dsr_msgs::ParallelAxis1Response :md5sum-) "f95b1583e6e04ac8d77cbe47de2af332")
+(setf (get dsr_msgs::ParallelAxis1Response :datatype-) "dsr_msgs/ParallelAxis1Response")
+(setf (get dsr_msgs::ParallelAxis1Response :definition-)
+      "#____________________________________________________________________________________________
+# parallel_axis(x1, x2, x3, axis, ref)  
+#____________________________________________________________________________________________
+
+float64[6] x1                # task pos(posx)  
+float64[6] x2                # task pos(posx)  
+float64[6] x3                # task pos(posx)
+int8       axis              # DR_AXIS_X(0), DR_AXIS_Y(1), DR_AXIS_Z(2) 
+int8       ref        #= 0   # DR_BASE(0), DR_WORLD(2), user coord(101~200)
+                             # <ref is only available in M2.40 or later> 
+---
+bool       success 
+")
+
+
+
+(provide :dsr_msgs/ParallelAxis1 "f95b1583e6e04ac8d77cbe47de2af332")
+
+

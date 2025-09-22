@@ -1,0 +1,4 @@
+setup_environment
+/home/vinh/catkin_ws/devel/.private/setup_environment/lib/pkgconfig/setup_environment.pc /home/vinh/catkin_ws/devel/lib/pkgconfig/setup_environment.pc
+/home/vinh/catkin_ws/devel/.private/setup_environment/share/setup_environment/cmake/setup_environmentConfig.cmake /home/vinh/catkin_ws/devel/share/setup_environment/cmake/setup_environmentConfig.cmake
+/home/vinh/catkin_ws/devel/.private/setup_environment/share/setup_environment/cmake/setup_environmentConfig-version.cmake /home/vinh/catkin_ws/devel/share/setup_environment/cmake/setup_environmentConfig-version.cmake

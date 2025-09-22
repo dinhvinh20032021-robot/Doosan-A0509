@@ -1,0 +1,8 @@
+prefix=/home/vinh/catkin_ws/devel
+
+Name: moveit_config_m1509
+Description: Description of moveit_config_m1509
+Version: 1.2.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

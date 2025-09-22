@@ -1,0 +1,4 @@
+doosan-robot/moveit_config_a0912
+/home/vinh/catkin_ws/devel/.private/moveit_config_a0912/lib/pkgconfig/moveit_config_a0912.pc /home/vinh/catkin_ws/devel/lib/pkgconfig/moveit_config_a0912.pc
+/home/vinh/catkin_ws/devel/.private/moveit_config_a0912/share/moveit_config_a0912/cmake/moveit_config_a0912Config.cmake /home/vinh/catkin_ws/devel/share/moveit_config_a0912/cmake/moveit_config_a0912Config.cmake
+/home/vinh/catkin_ws/devel/.private/moveit_config_a0912/share/moveit_config_a0912/cmake/moveit_config_a0912Config-version.cmake /home/vinh/catkin_ws/devel/share/moveit_config_a0912/cmake/moveit_config_a0912Config-version.cmake

@@ -1,0 +1,263 @@
+Hướng dẫn chi tiết với tất cả lệnh đã dùng
+Dưới đây là chuỗi các bước – kèm các lệnh cụ thể – để bạn:
+
+Tạo package my_table_description
+
+Thêm mesh “table.stl”
+
+Viết script move_sequence_rrt.py (add bàn, tô xám, thêm 19 hộp, chạy RRT)
+
+Build & chạy trên robot thật hoặc mô phỏng
+
+Ghi nhận và khắc phục mọi lỗi đã gặp
+
+1. Thiết lập môi trường ROS
+bash
+# 1.1. Source ROS Noetic
+source /opt/ros/noetic/setup.bash
+
+# 1.2. Chuẩn bị workspace nếu chưa có
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws
+catkin_make
+2. Tạo package chứa mesh và scripts
+bash
+cd ~/catkin_ws/src
+
+# 2.1. Tạo package mới phụ thuộc các gói cần thiết
+catkin_create_pkg my_table_description \
+  rospy \
+  moveit_commander \
+  moveit_msgs \
+  geometry_msgs \
+  std_msgs \
+  tf \
+  rospkg
+
+# 2.2. Tạo thư mục chứa mesh và script
+cd my_table_description
+mkdir -p meshes scripts
+• Copy file table.stl vào meshes/ • Tất cả Python script để vào scripts/
+
+3. Viết script move_sequence_rrt.py
+bash
+cd ~/catkin_ws/src/my_table_description/scripts
+rm -f move_sequence_rrt.py
+
+cat << 'EOF' > move_sequence_rrt.py
+#!/usr/bin/env python3
+"""
+Add table mesh (gray), 19 boxes, then execute RRT motion on arm.
+"""
+import sys, os, rospy, moveit_commander
+from moveit_commander import PlanningSceneInterface, RobotCommander, MoveGroupCommander
+from geometry_msgs.msg import PoseStamped
+from std_msgs.msg import ColorRGBA
+from moveit_msgs.msg import PlanningScene, ObjectColor
+from tf.transformations import quaternion_from_euler
+from rospkg import RosPack
+
+def add_table(scene, frame_id, ns):
+    # 1) Đường dẫn đến mesh trong package
+    pkg_path = RosPack().get_path("my_table_description")
+    mesh_fp  = os.path.join(pkg_path, "meshes", "table.stl")
+
+    # 2) Pose bàn
+    table = PoseStamped()
+    table.header.frame_id = frame_id
+    table.pose.position.x, table.pose.position.y, table.pose.position.z = -0.4, 2.20, 0.04
+    table.pose.orientation.w = 1.0
+
+    # 3) Scale mesh
+    scale = (0.2, 0.2, 0.2)
+    scene.add_mesh("table", table, mesh_fp, scale)
+    rospy.loginfo("✅ Added table mesh")
+
+    # 4) Tô màu gray cho 'table' qua PlanningScene diff
+    color = ObjectColor()
+    color.id = "table"
+    color.color = ColorRGBA(0.5, 0.5, 0.5, 1.0)
+    ps = PlanningScene(is_diff=True)
+    ps.object_colors.append(color)
+
+    # Lưu ý: phải publish lên namespace đúng
+    topic = f"{ns}/planning_scene"
+    pub = rospy.Publisher(topic, PlanningScene, queue_size=1)
+    rospy.sleep(0.5)  # chờ kết nối
+    pub.publish(ps)
+    rospy.loginfo(f"🎨 Table colored gray on '{topic}'")
+
+def add_box(scene, name, size, pos, frame_id):
+    box = PoseStamped()
+    box.header.frame_id = frame_id
+    box.pose.position.x, box.pose.position.y, box.pose.position.z = pos
+    box.pose.orientation.w = 1.0
+    scene.add_box(name, box, size=size)
+    rospy.loginfo(f"✅ Added box '{name}' at {pos}")
+
+def main():
+    rospy.init_node("move_sequence_rrt", anonymous=True)
+    moveit_commander.roscpp_initialize(sys.argv)
+
+    ns = "/dsr01m1013"
+    robot = RobotCommander(robot_description=f"{ns}/robot_description", ns=ns)
+    group = MoveGroupCommander("arm", robot_description=f"{ns}/robot_description", ns=ns)
+    scene = PlanningSceneInterface(ns=ns, synchronous=True)
+    rospy.sleep(1.0)
+
+    frame = group.get_planning_frame()
+    rospy.loginfo(f"Planning frame: {frame}")
+
+    # A) Add table + gray color
+    add_table(scene, frame, ns)
+
+    # B) Add 19 boxes
+    coords = [
+      ( 0.11,-0.78,0.13),( 0.60,-0.34,0.73),(-0.86,-0.89,0.10),
+      ( 0.66, 0.31,1.08),( 0.12,-0.79,0.45),(-0.84, 0.00,0.11),
+      (-0.84, 0.00,0.41),(-0.68, 0.00,1.20),( 0.00, 0.94,0.12),
+      (-0.92, 0.76,0.11),(-0.96, 0.79,0.43),(-0.70,-0.76,0.41),
+      (-0.27, 0.72,0.54),( 0.00,-0.52,1.02),(-0.11, 0.76,1.09),
+      ( 0.84, 0.51,0.12),( 0.72,-0.27,0.09),( 0.61, 0.10,0.52),
+      ( 0.00, 0.09,1.67)
+    ]
+    for i, pos in enumerate(coords, start=1):
+        add_box(scene, f"box{i}", (0.2,0.2,0.2), pos, frame)
+
+    # C) Chờ objects xuất hiện
+    expected = {f"box{i}" for i in range(1,20)} | {"table"}
+    t0 = rospy.get_time()
+    while rospy.get_time() - t0 < 5.0:
+        if expected.issubset(set(scene.get_known_object_names())):
+            rospy.loginfo("✅ All objects are now in the scene")
+            break
+        rospy.sleep(0.1)
+
+    # D) Thiết lập RRT planner và chạy sequence
+    group.set_goal_joint_tolerance(0.01)
+    group.set_max_velocity_scaling_factor(0.2)
+    group.set_max_acceleration_scaling_factor(0.2)
+    group.set_planning_time(10.0)
+    group.set_planner_id("RRTkConfigDefault")
+
+    seq = [
+      [0,0,0,0,0,0],
+      [-2.805,0.619,1.374,-0.004,1.191,-3.252],
+      [-3.850,0.619,1.374,-0.004,1.191,-3.252],
+      [0,0,0,0,0,0]
+    ]
+    rospy.loginfo("🚀 Executing RRT motion sequence")
+    for idx, tgt in enumerate(seq, start=1):
+        group.set_joint_value_target(tgt)
+        plan = group.plan()
+        if plan and plan[0]:
+            rospy.loginfo(f"➡️ Step {idx}")
+            group.execute(plan[1], wait=True)
+            group.stop(); group.clear_pose_targets()
+            rospy.sleep(1.0)
+        else:
+            rospy.logwarn(f"⚠️ Planning failed at step {idx}")
+            break
+
+    rospy.loginfo("✅ Motion complete")
+    moveit_commander.roscpp_shutdown()
+
+if __name__ == "__main__":
+    main()
+EOF
+
+# 3.1. Cho phép thực thi
+chmod +x move_sequence_rrt.py
+4. Build và source lại
+bash
+cd ~/catkin_ws
+catkin_make
+source devel/setup.bash
+5. Chạy thử và khắc phục lỗi
+5.1. Khởi robot driver + controllers
+bash
+# nếu robot thật (use_fake_hardware:=false)
+roslaunch dsr01m1013_bringup robot_bringup.launch sim:=false
+
+# nếu mô phỏng Gazebo
+roslaunch dsr01m1013_bringup robot_bringup.launch sim:=true
+5.2. Khởi MoveIt Planning + Execution
+bash
+roslaunch dsr01m1013_moveit_config moveit_planning_execution.launch sim:=false
+Lưu ý: sim:=true để chạy fake controllers
+
+5.3. Chạy script
+bash
+rosrun my_table_description move_sequence_rrt.py
+Hoặc:
+
+bash
+python3 ~/catkin_ws/src/my_table_description/scripts/move_sequence_rrt.py
+6. Xác nhận kết quả trên RViz
+Mở Displays → Planning Scene → bật
+
+Mở Displays → Object Colors → bật
+
+Quan sát:
+
+Mesh bàn xuất hiện tại (-0.4, 2.20, 0.04) với scale (0.2,0.2,0.2)
+
+Bàn hiển thị màu gray
+
+19 hộp obstacles quanh robot
+
+Robot lập kế hoạch và di chuyển né vật theo sequence
+
+7. Tóm tắt các lỗi đã gặp và cách khắc phục
+Lỗi ImportError khi import ColorRGBA
+
+Biểu hiện: Khi chạy script, thông báo “cannot import name ‘ColorRGBA’ from ‘geometry_msgs.msg’”.
+
+Nguyên nhân: ColorRGBA không nằm trong package geometry_msgs, nó thuộc std_msgs.
+
+Khắc phục: Thay dòng
+
+python
+from geometry_msgs.msg import ColorRGBA
+thành
+
+python
+from std_msgs.msg import ColorRGBA
+Lỗi AttributeError với _pub_planning_scene_diff
+
+Biểu hiện: “'PlanningSceneInterface' object has no attribute '_pub_planning_scene_diff'” khi gọi scene._pub_planning_scene_diff.publish(...).
+
+Nguyên nhân: API PlanningSceneInterface đã thay đổi, publisher nội bộ không còn expose.
+
+Khắc phục: Tạo publisher thủ công lên topic planning_scene (hoặc namespace tương ứng), ví dụ:
+
+python
+pub = rospy.Publisher(f"{ns}/planning_scene", PlanningScene, queue_size=1)
+rospy.sleep(0.5)
+pub.publish(planning_scene_diff)
+Bàn vẫn hiển thị màu xanh lá thay vì màu đã định
+
+Biểu hiện: Dù publish ObjectColor, bàn vẫn giữ màu mặc định.
+
+Nguyên nhân: Diff color được publish lên topic /planning_scene, trong khi MoveIt instance của bạn lắng nghe /dsr01m1013/planning_scene.
+
+Khắc phục: Đảm bảo publisher sử dụng đúng namespace của MoveIt, ví dụ
+
+python
+pub = rospy.Publisher("/dsr01m1013/planning_scene", PlanningScene, queue_size=1)
+Lỗi RuntimeError: invalid robot model
+
+Biểu hiện: Khi khởi tạo RobotCommander, thông báo “Robot model parameter not found! Did you remap 'robot_description'?” và “invalid robot model”.
+
+Nguyên nhân: Tham số robot_description chưa được load vào Parameter Server trước khi gọi moveit_commander.
+
+Khắc phục:
+
+Chạy script sau khi đã khởi launch file MoveIt (đã load URDF vào /robot_description).
+
+Nếu muốn chạy độc lập, trong code thêm:
+
+python
+urdf = open(path_to_urdf).read()
+rospy.set_param("/dsr01m1013/robot_description", urdf)
+trước khi gọi moveit_commander.roscpp_initialize(...).
