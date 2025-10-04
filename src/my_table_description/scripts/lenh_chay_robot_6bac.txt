@@ -1,0 +1,65 @@
+//catkin_ws build
+
+//neu k chay dc lenh hay chay 2 lenh nay
+source /opt/ros/noetic/setup.bash
+source ~/catkin_ws/devel/setup.bash
+
+# Chạy launch cho A0509 với màu xanh và gripper Robotiq 2F
+roslaunch dsr_description a0509.launch color:=blue gripper:=robotiq_2f
+
+//chay robot model:REAL
+roscore
+
+//chạy real robot
+roslaunch dsr_launcher dsr_moveit.launch model:=a0509 host:=192.168.137.100 mode:=real 
+roslaunch dsr_launcher dsr_moveit.launch model:=a0509 gripper:=robotiq_2f host:=192.168.137.100 mode:=real 
+
+
+//bật commander  
+ROS_NAMESPACE=/dsr01a0509 rosrun moveit_commander moveit_commander_cmdline.py robot_description:=/dsr01a0509/robot_description
+
+//fix tam commander
+rosrun moveit_commander moveit_commander_cmdline.py
+
+//nguồn udrf.xacro home/catkin_ws/src/dsr_decription/xacro
+
+// chay python: 
+python3 ~/...../...py
+
+// chay hoan tat rrt full rosrun
+
+source /opt/ros/noetic/setup.bash
+source ~/catkin_ws/devel/setup.bash
+roscore
+
+source /opt/ros/noetic/setup.bash
+source ~/catkin_ws/devel/setup.bash
+roslaunch dsr_launcher dsr_moveit.launch model:=a0509 host:=192.168.137.100 mode:=real 
+
+
+source /opt/ros/noetic/setup.bash
+source ~/catkin_ws/devel/setup.bash
+rosrun my_table_description RRT_hoan_chinh.py
+
+//lenh chay do thi ---> ~/catkin_ws/src/my_table_description/scripts
+
+source /opt/ros/noetic/setup.bash
+source ~/catkin_ws/devel/setup.bash
+
+./do_thi_RRT.py
+
+./do_thi_PRM.py
+
+./do_thi_RRT_START.py
+
+./do_thi_quy_dao_3_thuat_toan.py
+
+./do_thi_so_sanh_thoi_gian_3_thuat_toan.py
+
+./do_thi_waypoint_3_thuat_toan.py
+
+//cach ket noi thuan toan tu python sang ompl thong qua moveit
+
+$ gedit /opt/ros/noetic/share/moveit_planners_ompl/ompl_interface_plugin_description.xml
+
+catkin_ws/src/doosan-robot/moveit_config_a0509/config -->ompl_planning.yaml

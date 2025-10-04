@@ -1,0 +1,1116 @@
+[INFO] [1759303658.310744]: Started controllers: dsr_joint_publisher
+[INFO] [1759303677.610806461]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[WARN] [1759303677.611309541]: Cannot find planning configuration for group 'arm' using planner 'RRTStartkConfigDefault'. Will use defaults instead.
+[INFO] [1759303677.612677374]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[INFO] [1759303677.613009321]: arm/arm: Starting planning with 1 states already in datastructure
+[INFO] [1759303677.624387914]: arm/arm: Created 4 states (2 start + 2 goal)
+[INFO] [1759303677.624435532]: Solution found in 0.011512 seconds
+[INFO] [1759303677.629036532]: SimpleSetup: Path simplification took 0.004501 seconds and changed from 3 to 2 states
+[INFO] [1759303677.631374091]: Execution request received
+[INFO] [1759303677.711868449]: callback: Trajectory received
+[INFO] [1759303677.711898339]:   goal->trajectory.points.size() =19
+[INFO] [1759303677.711907827]:   goal->trajectory.joint_names.size() =6
+[INFO] [1759303677.711930028]: [trajectory] [00 : 0.000 : -0.000]  -0.002   0.000  -0.005  -0.003  -0.001  -0.003
+[INFO] [1759303677.757399097]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303677.834238629]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303677.834314324]: [trajectory] [01 : 0.423 : 0.300]  -4.630   0.847   3.920  -0.127   4.986   0.028
+[INFO] [1759303677.859199455]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303677.860247586]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303678.134927193]: [trajectory] [02 : 0.616 : 0.193]  -9.258   1.694   7.845  -0.251   9.974   0.060
+[INFO] [1759303678.159201581]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303678.412181076]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303678.412244774]: [trajectory] [03 : 0.809 : 0.108] -13.886   2.541  11.770  -0.375  14.962   0.092
+[INFO] [1759303678.434221573]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303678.604224004]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303678.604273685]: [trajectory] [04 : 1.001 : 0.109] -18.514   3.388  15.695  -0.498  19.949   0.124
+[INFO] [1759303678.627347043]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303678.795293954]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303678.795431983]: [trajectory] [05 : 1.194 : 0.111] -23.142   4.235  19.620  -0.622  24.937   0.156
+[INFO] [1759303678.819223712]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303678.988159255]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303678.988221325]: [trajectory] [06 : 1.387 : 0.111] -27.770   5.082  23.545  -0.746  29.925   0.187
+[INFO] [1759303679.010277048]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303679.182108538]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303679.182156416]: [trajectory] [07 : 1.580 : 0.110] -32.398   5.929  27.470  -0.869  34.913   0.219
+[INFO] [1759303679.204260471]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303679.373197226]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303679.373274282]: [trajectory] [08 : 1.773 : 0.111] -37.026   6.776  31.395  -0.993  39.900   0.251
+[INFO] [1759303679.395279789]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303679.565202055]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303679.565306106]: [trajectory] [09 : 1.966 : 0.112] -41.654   7.623  35.320  -1.117  44.888   0.283
+[INFO] [1759303679.587288336]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303679.758287641]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303679.758390492]: [trajectory] [10 : 2.158 : 0.112] -46.282   8.470  39.245  -1.241  49.876   0.315
+[INFO] [1759303679.780113656]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303679.952257841]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303679.952413144]: [trajectory] [11 : 2.351 : 0.111] -50.910   9.317  43.170  -1.364  54.863   0.346
+[INFO] [1759303679.974192975]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303680.143192478]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303680.143253101]: [trajectory] [12 : 2.544 : 0.113] -55.538  10.164  47.095  -1.488  59.851   0.378
+[INFO] [1759303680.165231837]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303680.337211255]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303680.337275972]: [trajectory] [13 : 2.737 : 0.112] -60.166  11.011  51.020  -1.612  64.839   0.410
+[INFO] [1759303680.359242264]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303680.530212002]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303680.530275320]: [trajectory] [14 : 2.930 : 0.111] -64.795  11.858  54.945  -1.735  69.826   0.442
+[INFO] [1759303680.552380491]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303680.722135253]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303680.722188357]: [trajectory] [15 : 3.123 : 0.112] -69.423  12.705  58.871  -1.859  74.814   0.474
+[INFO] [1759303680.744168712]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303680.915188443]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303680.915223962]: [trajectory] [16 : 3.315 : 0.112] -74.051  13.552  62.796  -1.983  79.802   0.505
+[INFO] [1759303680.937276889]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303681.109254736]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303681.109292197]: [trajectory] [17 : 3.508 : 0.111] -78.679  14.399  66.721  -2.107  84.790   0.537
+[INFO] [1759303681.131400193]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303681.302216524]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303681.302253761]: [trajectory] [18 : 3.931 : 0.341] -83.307  15.246  70.646  -2.230  89.777   0.569
+[INFO] [1759303681.324277206]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303681.494207144]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303682.046723324]: Controller 'dsr_joint_trajectory_controller' successfully finished
+[INFO] [1759303682.311320306]: Completed trajectory execution with status SUCCEEDED ...
+[INFO] [1759303682.311464519]: Execution completed: SUCCEEDED
+[INFO] [1759303682.311813631]: Received event 'stop'
+[INFO] [1759303682.410892030]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[WARN] [1759303682.411104854]: Cannot find planning configuration for group 'arm' using planner 'RRTStartkConfigDefault'. Will use defaults instead.
+[INFO] [1759303682.411953706]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[INFO] [1759303682.412085766]: arm/arm: Starting planning with 1 states already in datastructure
+[INFO] [1759303682.423983288]: arm/arm: Created 5 states (3 start + 2 goal)
+[INFO] [1759303682.424017960]: Solution found in 0.011982 seconds
+[INFO] [1759303682.429953811]: SimpleSetup: Path simplification took 0.005912 seconds and changed from 3 to 2 states
+[INFO] [1759303682.433042959]: Execution request received
+[INFO] [1759303682.511743754]: callback: Trajectory received
+[INFO] [1759303682.511771510]:   goal->trajectory.points.size() =35
+[INFO] [1759303682.511781635]:   goal->trajectory.joint_names.size() =6
+[INFO] [1759303682.511801339]: [trajectory] [00 : 0.000 : -0.000] -83.318  15.248  70.650  -2.235  89.780   0.573
+[INFO] [1759303682.533287152]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303682.534328678]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303682.534439349]: [trajectory] [01 : 0.430 : 0.407] -85.830  13.503  66.749   3.045  89.198   0.854
+[INFO] [1759303682.556479154]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303682.784288791]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303682.941928371]: [trajectory] [02 : 0.609 : 0.179] -88.342  11.759  62.848   8.325  88.617   1.136
+[INFO] [1759303682.964303640]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303683.215149561]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303683.215220544]: [trajectory] [03 : 0.747 : 0.044] -90.855  10.014  58.947  13.604  88.035   1.417
+[INFO] [1759303683.237286193]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303683.395288287]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303683.395396804]: [trajectory] [04 : 0.877 : -0.007] -93.367   8.270  55.046  18.884  87.454   1.699
+[INFO] [1759303683.417298441]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303683.532290168]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303683.532416286]: [trajectory] [05 : 1.007 : -0.014] -95.879   6.525  51.145  24.163  86.872   1.980
+[INFO] [1759303683.554456607]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303683.662235626]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303683.662367863]: [trajectory] [06 : 1.137 : -0.014] -98.392   4.781  47.244  29.443  86.291   2.262
+[INFO] [1759303683.684274168]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303683.793249734]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303683.793357013]: [trajectory] [07 : 1.267 : -0.014] -100.904   3.036  43.342  34.723  85.709   2.543
+[INFO] [1759303683.805461167]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303683.923248550]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303683.923338476]: [trajectory] [08 : 1.397 : -0.014] -103.416   1.292  39.441  40.002  85.128   2.824
+[INFO] [1759303683.945267101]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303684.042379414]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303684.042452890]: [trajectory] [09 : 1.527 : -0.003] -105.929  -0.453  35.540  45.282  84.547   3.106
+[INFO] [1759303684.064303516]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303684.182250143]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303684.182361476]: [trajectory] [10 : 1.657 : -0.013] -108.441  -2.197  31.639  50.561  83.965   3.387
+[INFO] [1759303684.204260827]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303684.313310095]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303684.313413542]: [trajectory] [11 : 1.787 : -0.014] -110.953  -3.942  27.738  55.841  83.384   3.669
+[INFO] [1759303684.325299132]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303684.443220144]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303684.443321792]: [trajectory] [12 : 1.917 : -0.014] -113.466  -5.686  23.837  61.121  82.802   3.950
+[INFO] [1759303684.465303032]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303684.562252638]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303684.562352604]: [trajectory] [13 : 2.047 : -0.003] -115.978  -7.431  19.936  66.400  82.221   4.232
+[INFO] [1759303684.584281292]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303684.702230044]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303684.702282837]: [trajectory] [14 : 2.177 : -0.013] -118.490  -9.175  16.034  71.680  81.639   4.513
+[INFO] [1759303684.724414549]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303684.833280839]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303684.833404575]: [trajectory] [15 : 2.307 : -0.014] -121.003 -10.920  12.133  76.959  81.058   4.795
+[INFO] [1759303684.855425966]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303684.963377672]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303684.963442579]: [trajectory] [16 : 2.437 : -0.014] -123.515 -12.664   8.232  82.239  80.476   5.076
+[INFO] [1759303684.985421583]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303685.092421879]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303685.092485337]: [trajectory] [17 : 2.567 : -0.013] -126.027 -14.408   4.331  87.519  79.895   5.358
+[INFO] [1759303685.104608322]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303685.222277098]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303685.222319564]: [trajectory] [18 : 2.697 : -0.013] -128.540 -16.153   0.430  92.798  79.313   5.639
+[INFO] [1759303685.244527248]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303685.343349364]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303685.343477335]: [trajectory] [19 : 2.828 : -0.004] -131.052 -17.897  -3.471  98.078  78.732   5.921
+[INFO] [1759303685.365541333]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303685.483335895]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303685.483439294]: [trajectory] [20 : 2.958 : -0.014] -133.564 -19.642  -7.372 103.357  78.151   6.202
+[INFO] [1759303685.505440112]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303685.612277175]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303685.612332142]: [trajectory] [21 : 3.088 : -0.013] -136.077 -21.386 -11.274 108.637  77.569   6.483
+[INFO] [1759303685.624405377]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303685.742396756]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303685.742498905]: [trajectory] [22 : 3.218 : -0.013] -138.589 -23.131 -15.175 113.917  76.988   6.765
+[INFO] [1759303685.764419908]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303685.863317386]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303685.863355351]: [trajectory] [23 : 3.348 : -0.004] -141.101 -24.875 -19.076 119.196  76.406   7.046
+[INFO] [1759303685.885411535]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303686.003457191]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303686.003500259]: [trajectory] [24 : 3.478 : -0.014] -143.614 -26.620 -22.977 124.476  75.825   7.328
+[INFO] [1759303686.025394107]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303686.134347228]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303686.134480210]: [trajectory] [25 : 3.608 : -0.015] -146.126 -28.364 -26.878 129.755  75.243   7.609
+[INFO] [1759303686.156625637]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303686.264423558]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303686.264573954]: [trajectory] [26 : 3.738 : -0.015] -148.638 -30.109 -30.779 135.035  74.662   7.891
+[INFO] [1759303686.286404238]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303686.393393623]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303686.393456132]: [trajectory] [27 : 3.868 : -0.014] -151.151 -31.853 -34.680 140.315  74.080   8.172
+[INFO] [1759303686.415713618]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303686.523470481]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303686.523549252]: [trajectory] [28 : 3.998 : -0.014] -153.663 -33.598 -38.582 145.594  73.499   8.454
+[INFO] [1759303686.545611904]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303686.654469308]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303686.654566380]: [trajectory] [29 : 4.128 : -0.015] -156.175 -35.342 -42.483 150.874  72.917   8.735
+[INFO] [1759303686.676415112]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303686.784402345]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303686.784588765]: [trajectory] [30 : 4.258 : -0.015] -158.688 -37.087 -46.384 156.153  72.336   9.017
+[INFO] [1759303686.806427550]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303686.913351716]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303686.913511203]: [trajectory] [31 : 4.388 : -0.014] -161.200 -38.831 -50.285 161.433  71.755   9.298
+[INFO] [1759303686.935388451]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303687.043433349]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303687.043485136]: [trajectory] [32 : 4.526 : -0.006] -163.712 -40.576 -54.186 166.713  71.173   9.580
+[INFO] [1759303687.065485489]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303687.174444404]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303687.174591095]: [trajectory] [33 : 4.707 : 0.044] -166.225 -42.320 -58.087 171.992  70.592   9.861
+[INFO] [1759303687.196485776]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303687.312422804]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303687.312579136]: [trajectory] [34 : 5.137 : 0.336] -168.737 -44.065 -61.988 177.272  70.010  10.142
+[INFO] [1759303687.324432645]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303687.493439411]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303688.042701283]: Controller 'dsr_joint_trajectory_controller' successfully finished
+[INFO] [1759303688.311222554]: Completed trajectory execution with status SUCCEEDED ...
+[INFO] [1759303688.311343791]: Execution completed: SUCCEEDED
+[INFO] [1759303688.311728301]: Received event 'stop'
+[INFO] [1759303688.411135917]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[WARN] [1759303688.411364631]: Cannot find planning configuration for group 'arm' using planner 'RRTStartkConfigDefault'. Will use defaults instead.
+[INFO] [1759303688.412093217]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[INFO] [1759303688.412234817]: arm/arm: Starting planning with 1 states already in datastructure
+[INFO] [1759303688.428513439]: arm/arm: Created 9 states (6 start + 3 goal)
+[INFO] [1759303688.428550380]: Solution found in 0.016377 seconds
+[INFO] [1759303688.452080596]: SimpleSetup: Path simplification took 0.023488 seconds and changed from 6 to 4 states
+[INFO] [1759303688.456529766]: Execution request received
+[INFO] [1759303688.511772259]: callback: Trajectory received
+[INFO] [1759303688.511799093]:   goal->trajectory.points.size() =77
+[INFO] [1759303688.511804991]:   goal->trajectory.joint_names.size() =6
+[INFO] [1759303688.511817883]: [trajectory] [00 : 0.000 : -0.000] -168.743 -44.072 -61.996 177.274  70.009  10.145
+[INFO] [1759303688.533359150]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303688.534371568]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303688.534399441]: [trajectory] [01 : 0.332 : 0.309] -167.084 -43.427 -58.949 174.182  67.113   7.260
+[INFO] [1759303688.556498389]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303688.784396027]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303688.843482662]: [trajectory] [02 : 0.467 : 0.135] -165.425 -42.782 -55.902 171.091  64.217   4.375
+[INFO] [1759303688.865437885]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303689.117408064]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303689.117453791]: [trajectory] [03 : 0.573 : -0.033] -163.765 -42.138 -52.856 167.999  61.321   1.490
+[INFO] [1759303689.139501731]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303689.252458220]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303689.252505118]: [trajectory] [04 : 0.674 : -0.066] -162.106 -41.493 -49.809 164.907  58.425  -1.395
+[INFO] [1759303689.264533717]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303689.358381244]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303689.358422228]: [trajectory] [05 : 0.776 : -0.071] -160.447 -40.848 -46.762 161.815  55.530  -4.280
+[INFO] [1759303689.380502335]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303689.449378203]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303689.449422914]: [trajectory] [06 : 0.877 : -0.060] -158.787 -40.204 -43.715 158.723  52.634  -7.165
+[INFO] [1759303689.471547439]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303689.561464723]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303689.561552768]: [trajectory] [07 : 0.979 : -0.071] -157.128 -39.559 -40.669 155.631  49.738 -10.050
+[INFO] [1759303689.583518634]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303689.662437102]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303689.662530909]: [trajectory] [08 : 1.081 : -0.070] -155.469 -38.915 -37.622 152.539  46.842 -12.935
+[INFO] [1759303689.684458223]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303689.764519640]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303689.764614432]: [trajectory] [09 : 1.182 : -0.071] -153.810 -38.270 -34.575 149.447  43.946 -15.820
+[INFO] [1759303689.786567159]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303689.865499346]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303689.865624113]: [trajectory] [10 : 1.288 : -0.066] -152.150 -37.625 -31.529 146.355  41.050 -18.706
+[INFO] [1759303689.887531514]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303689.967448782]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303689.967575696]: [trajectory] [11 : 1.424 : -0.032] -150.491 -36.981 -28.482 143.263  38.155 -21.591
+[INFO] [1759303689.989553965]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303690.074568904]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303690.074669248]: [trajectory] [12 : 1.685 : 0.122] -148.832 -36.336 -25.435 140.171  35.259 -24.476
+[INFO] [1759303690.096545345]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303690.208425378]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303690.208484959]: [trajectory] [13 : 1.941 : 0.244] -151.019 -35.320 -24.313 134.708  33.149 -27.013
+[INFO] [1759303690.230457669]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303690.471427703]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303690.471560960]: [trajectory] [14 : 2.107 : 0.147] -153.207 -34.304 -23.191 129.245  31.039 -29.550
+[INFO] [1759303690.493657839]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303690.727463170]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303690.727562456]: [trajectory] [15 : 2.241 : 0.025] -155.395 -33.288 -22.070 123.782  28.929 -32.087
+[INFO] [1759303690.749648369]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303690.892659485]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303690.892731496]: [trajectory] [16 : 2.362 : -0.019] -157.582 -32.272 -20.948 118.319  26.819 -34.624
+[INFO] [1759303690.904857880]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303691.026514126]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303691.026565506]: [trajectory] [17 : 2.484 : -0.031] -159.770 -31.256 -19.826 112.856  24.710 -37.161
+[INFO] [1759303691.048505955]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303691.137557956]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303691.137597481]: [trajectory] [18 : 2.605 : -0.021] -161.958 -30.241 -18.704 107.393  22.600 -39.699
+[INFO] [1759303691.159953126]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303691.269533388]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303691.269568375]: [trajectory] [19 : 2.726 : -0.031] -164.145 -29.225 -17.582 101.930  20.490 -42.236
+[INFO] [1759303691.291599183]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303691.390535922]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303691.390639664]: [trajectory] [20 : 2.848 : -0.031] -166.333 -28.209 -16.461  96.467  18.380 -44.773
+[INFO] [1759303691.412580344]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303691.512630168]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303691.512680696]: [trajectory] [21 : 2.969 : -0.032] -168.521 -27.193 -15.339  91.003  16.270 -47.310
+[INFO] [1759303691.524667598]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303691.633537195]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303691.633637839]: [trajectory] [22 : 3.091 : -0.031] -170.709 -26.177 -14.217  85.540  14.160 -49.847
+[INFO] [1759303691.655680839]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303691.745533742]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303691.745571613]: [trajectory] [23 : 3.212 : -0.022] -172.896 -25.161 -13.095  80.077  12.051 -52.384
+[INFO] [1759303691.767595433]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303691.876523700]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303691.876572966]: [trajectory] [24 : 3.333 : -0.031] -175.084 -24.145 -11.973  74.614   9.941 -54.921
+[INFO] [1759303691.898600790]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303691.998525624]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303691.998563170]: [trajectory] [25 : 3.455 : -0.032] -177.272 -23.129 -10.851  69.151   7.831 -57.458
+[INFO] [1759303692.020582174]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303692.119547167]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303692.119669497]: [trajectory] [26 : 3.576 : -0.032] -179.459 -22.113  -9.730  63.688   5.721 -59.995
+[INFO] [1759303692.141712209]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303692.241752223]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303692.241810587]: [trajectory] [27 : 3.698 : -0.032] -181.647 -21.097  -8.608  58.225   3.611 -62.533
+[INFO] [1759303692.263613064]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303692.362551930]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303692.362684821]: [trajectory] [28 : 3.819 : -0.032] -183.835 -20.081  -7.486  52.762   1.501 -65.070
+[INFO] [1759303692.374631195]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303692.482582214]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303692.482620624]: [trajectory] [29 : 3.940 : -0.030] -186.023 -19.065  -6.364  47.299  -0.608 -67.607
+[INFO] [1759303692.494833666]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303692.595571273]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303692.595606766]: [trajectory] [30 : 4.062 : -0.022] -188.210 -18.049  -5.242  41.836  -2.718 -70.144
+[INFO] [1759303692.617650759]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303692.715569981]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303692.715610754]: [trajectory] [31 : 4.183 : -0.021] -190.398 -17.034  -4.121  36.372  -4.828 -72.681
+[INFO] [1759303692.737652845]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303692.848610705]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303692.848721944]: [trajectory] [32 : 4.305 : -0.032] -192.586 -16.018  -2.999  30.909  -6.938 -75.218
+[INFO] [1759303692.870748141]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303692.968567243]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303692.968608713]: [trajectory] [33 : 4.426 : -0.031] -194.773 -15.002  -1.877  25.446  -9.048 -77.755
+[INFO] [1759303692.990807308]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303693.089676956]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303693.089849184]: [trajectory] [34 : 4.547 : -0.031] -196.961 -13.986  -0.755  19.983 -11.158 -80.292
+[INFO] [1759303693.111579169]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303693.211569758]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303693.211699510]: [trajectory] [35 : 4.669 : -0.031] -199.149 -12.970   0.367  14.520 -13.268 -82.829
+[INFO] [1759303693.233677495]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303693.332607288]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303693.332724300]: [trajectory] [36 : 4.790 : -0.031] -201.336 -11.954   1.488   9.057 -15.377 -85.367
+[INFO] [1759303693.344866414]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303693.454583701]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303693.454697571]: [trajectory] [37 : 4.912 : -0.031] -203.524 -10.938   2.610   3.594 -17.487 -87.904
+[INFO] [1759303693.476627765]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303693.565671120]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303693.565865805]: [trajectory] [38 : 5.033 : -0.021] -205.712  -9.922   3.732  -1.869 -19.597 -90.441
+[INFO] [1759303693.587650561]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303693.697608694]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303693.697705531]: [trajectory] [39 : 5.154 : -0.031] -207.900  -8.906   4.854  -7.332 -21.707 -92.978
+[INFO] [1759303693.719590347]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303693.818641179]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303693.818769960]: [trajectory] [40 : 5.276 : -0.031] -210.087  -7.890   5.976 -12.795 -23.817 -95.515
+[INFO] [1759303693.840750430]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303693.940583983]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303693.940732544]: [trajectory] [41 : 5.397 : -0.032] -212.275  -6.874   7.098 -18.259 -25.927 -98.052
+[INFO] [1759303693.962609419]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303694.061587766]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303694.061675578]: [trajectory] [42 : 5.519 : -0.031] -214.463  -5.858   8.219 -23.722 -28.036 -100.589
+[INFO] [1759303694.083679342]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303694.183607727]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303694.183657932]: [trajectory] [43 : 5.640 : -0.032] -216.650  -4.843   9.341 -29.185 -30.146 -103.126
+[INFO] [1759303694.205808492]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303694.304634417]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303694.304681971]: [trajectory] [44 : 5.761 : -0.031] -218.838  -3.827  10.463 -34.648 -32.256 -105.664
+[INFO] [1759303694.326742317]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303694.426600940]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303694.426714026]: [trajectory] [45 : 5.883 : -0.032] -221.026  -2.811  11.585 -40.111 -34.366 -108.201
+[INFO] [1759303694.448714515]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303694.547701434]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303694.547806864]: [trajectory] [46 : 6.004 : -0.032] -223.213  -1.795  12.707 -45.574 -36.476 -110.738
+[INFO] [1759303694.569854157]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303694.667632058]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303694.667667459]: [trajectory] [47 : 6.126 : -0.030] -225.401  -0.779  13.828 -51.037 -38.586 -113.275
+[INFO] [1759303694.689637582]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303694.790579145]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303694.790668202]: [trajectory] [48 : 6.247 : -0.032] -227.589   0.237  14.950 -56.500 -40.695 -115.812
+[INFO] [1759303694.812702491]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303694.910688272]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303694.910814069]: [trajectory] [49 : 6.368 : -0.031] -229.777   1.253  16.072 -61.963 -42.805 -118.349
+[INFO] [1759303694.932770045]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303695.033758477]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303695.033835450]: [trajectory] [50 : 6.490 : -0.032] -231.964   2.269  17.194 -67.426 -44.915 -120.886
+[INFO] [1759303695.055701570]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303695.153574119]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303695.153658945]: [trajectory] [51 : 6.611 : -0.031] -234.152   3.285  18.316 -72.890 -47.025 -123.423
+[INFO] [1759303695.175752615]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303695.274683889]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303695.274799105]: [trajectory] [52 : 6.733 : -0.030] -236.340   4.301  19.438 -78.353 -49.135 -125.960
+[INFO] [1759303695.296792280]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303695.396690539]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303695.396809349]: [trajectory] [53 : 6.854 : -0.031] -238.527   5.317  20.559 -83.816 -51.245 -128.498
+[INFO] [1759303695.418735526]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303695.517605265]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303695.517701664]: [trajectory] [54 : 6.975 : -0.030] -240.715   6.333  21.681 -89.279 -53.355 -131.035
+[INFO] [1759303695.539835511]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303695.639734299]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303695.639856063]: [trajectory] [55 : 7.097 : -0.031] -242.903   7.348  22.803 -94.742 -55.464 -133.572
+[INFO] [1759303695.661790968]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303695.760689513]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303695.760736494]: [trajectory] [56 : 7.218 : -0.031] -245.090   8.364  23.925 -100.205 -57.574 -136.109
+[INFO] [1759303695.782756857]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303695.882791589]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303695.882918443]: [trajectory] [57 : 7.340 : -0.031] -247.278   9.380  25.047 -105.668 -59.684 -138.646
+[INFO] [1759303695.904899968]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303696.003855284]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303696.003905739]: [trajectory] [58 : 7.461 : -0.031] -249.466  10.396  26.168 -111.131 -61.794 -141.183
+[INFO] [1759303696.025762311]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303696.125720299]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303696.125753272]: [trajectory] [59 : 7.582 : -0.031] -251.654  11.412  27.290 -116.594 -63.904 -143.720
+[INFO] [1759303696.147795222]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303696.246812292]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303696.246852380]: [trajectory] [60 : 7.704 : -0.031] -253.841  12.428  28.412 -122.057 -66.014 -146.257
+[INFO] [1759303696.268787209]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303696.368725112]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303696.368833342]: [trajectory] [61 : 7.825 : -0.032] -256.029  13.444  29.534 -127.521 -68.123 -148.794
+[INFO] [1759303696.390765940]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303696.489654769]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303696.489775290]: [trajectory] [62 : 7.947 : -0.031] -258.217  14.460  30.656 -132.984 -70.233 -151.332
+[INFO] [1759303696.511728130]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303696.611647094]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303696.611679143]: [trajectory] [63 : 8.085 : -0.015] -260.404  15.476  31.778 -138.447 -72.343 -153.869
+[INFO] [1759303696.633708779]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303696.732747410]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303696.732791783]: [trajectory] [64 : 8.265 : 0.044] -262.592  16.492  32.899 -143.910 -74.453 -156.406
+[INFO] [1759303696.754828795]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303696.870723154]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303696.870812507]: [trajectory] [65 : 8.636 : 0.277] -264.780  17.508  34.021 -149.373 -76.563 -158.943
+[INFO] [1759303696.892811426]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303697.049703579]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303697.147816770]: [trajectory] [66 : 8.941 : 0.305] -267.549  18.192  35.814 -152.133 -78.832 -155.140
+[INFO] [1759303697.169793354]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303697.421682919]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303697.453176564]: [trajectory] [67 : 9.092 : 0.151] -270.318  18.876  37.606 -154.894 -81.102 -151.337
+[INFO] [1759303697.474831833]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303697.726820523]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303697.726913446]: [trajectory] [68 : 9.210 : -0.005] -273.087  19.560  39.399 -157.654 -83.372 -147.535
+[INFO] [1759303697.748840796]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303697.877775718]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303697.877865669]: [trajectory] [69 : 9.325 : -0.041] -275.856  20.245  41.192 -160.414 -85.642 -143.732
+[INFO] [1759303697.899898402]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303697.995796005]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303697.995881065]: [trajectory] [70 : 9.441 : -0.043] -278.625  20.929  42.984 -163.175 -87.911 -139.929
+[INFO] [1759303698.017929942]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303698.110909265]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303698.111029896]: [trajectory] [71 : 9.556 : -0.043] -281.394  21.613  44.777 -165.935 -90.181 -136.126
+[INFO] [1759303698.132869066]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303698.226709630]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303698.226848243]: [trajectory] [72 : 9.671 : -0.044] -284.163  22.297  46.569 -168.696 -92.451 -132.324
+[INFO] [1759303698.248840660]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303698.341852041]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303698.341892195]: [trajectory] [73 : 9.787 : -0.043] -286.932  22.981  48.362 -171.456 -94.720 -128.521
+[INFO] [1759303698.363843848]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303698.457840093]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303698.458001134]: [trajectory] [74 : 9.906 : -0.040] -289.701  23.666  50.155 -174.216 -96.990 -124.718
+[INFO] [1759303698.479834866]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303698.572797510]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303698.572843423]: [trajectory] [75 : 10.058 : -0.003] -292.470  24.350  51.947 -176.977 -99.260 -120.915
+[INFO] [1759303698.595062535]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303698.690800616]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303698.690929847]: [trajectory] [76 : 10.424 : 0.245] -295.240  25.034  53.740 -179.737 -101.529 -117.113
+[INFO] [1759303698.712934572]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303698.843800159]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303699.339241157]: Controller 'dsr_joint_trajectory_controller' successfully finished
+[INFO] [1759303699.611222079]: Completed trajectory execution with status SUCCEEDED ...
+[INFO] [1759303699.611335074]: Execution completed: SUCCEEDED
+[INFO] [1759303699.611626999]: Received event 'stop'
+[INFO] [1759303699.711126091]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[WARN] [1759303699.711396280]: Cannot find planning configuration for group 'arm' using planner 'RRTStartkConfigDefault'. Will use defaults instead.
+[INFO] [1759303699.712155166]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[INFO] [1759303699.712293843]: arm/arm: Starting planning with 1 states already in datastructure
+[INFO] [1759303699.725459459]: arm/arm: Created 8 states (2 start + 6 goal)
+[INFO] [1759303699.725498077]: Solution found in 0.013266 seconds
+[INFO] [1759303699.731281716]: SimpleSetup: Path simplification took 0.005754 seconds and changed from 3 to 4 states
+[INFO] [1759303699.733989596]: Execution request received
+[INFO] [1759303699.811386178]: callback: Trajectory received
+[INFO] [1759303699.811422002]:   goal->trajectory.points.size() =26
+[INFO] [1759303699.811432680]:   goal->trajectory.joint_names.size() =6
+[INFO] [1759303699.811455117]: [trajectory] [00 : 0.000 : -0.000] -295.246  25.039  53.746 -179.740 -101.530 -117.111
+[INFO] [1759303699.833860004]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303699.834921784]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303699.834948375]: [trajectory] [01 : 0.426 : 0.402] -292.947  23.121  54.234 -182.487 -101.070 -122.324
+[INFO] [1759303699.857023614]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303700.084801309]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303700.237482425]: [trajectory] [02 : 0.602 : 0.176] -290.648  21.203  54.723 -185.235 -100.610 -127.537
+[INFO] [1759303700.259920374]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303700.511794624]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303700.511858832]: [trajectory] [03 : 0.739 : 0.039] -288.348  19.285  55.212 -187.983 -100.150 -132.749
+[INFO] [1759303700.533951724]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303700.686890404]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303700.686938374]: [trajectory] [04 : 0.855 : -0.021] -286.049  17.367  55.701 -190.730 -99.690 -137.962
+[INFO] [1759303700.709015683]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303700.824969448]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303700.825017882]: [trajectory] [05 : 0.971 : -0.043] -283.750  15.449  56.190 -193.478 -99.230 -143.175
+[INFO] [1759303700.847113085]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303700.939896271]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303700.939944868]: [trajectory] [06 : 1.097 : -0.031] -281.450  13.531  56.679 -196.225 -98.770 -148.388
+[INFO] [1759303700.961940256]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303701.055885179]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303701.055970950]: [trajectory] [07 : 1.251 : 0.006] -279.151  11.613  57.168 -198.973 -98.311 -153.601
+[INFO] [1759303701.077974741]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303701.182832656]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303701.182911917]: [trajectory] [08 : 1.466 : 0.095] -276.851   9.694  57.657 -201.721 -97.851 -158.814
+[INFO] [1759303701.204973466]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303701.336898885]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303701.336952404]: [trajectory] [09 : 1.892 : 0.366] -268.082   8.705  57.881 -203.144 -97.637 -161.348
+[INFO] [1759303701.358958972]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303701.551972397]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303701.703156304]: [trajectory] [10 : 2.257 : 0.365] -259.313   7.715  58.104 -204.567 -97.424 -163.882
+[INFO] [1759303701.714034854]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303701.977937694]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303702.068471450]: [trajectory] [11 : 2.622 : 0.365] -250.545   6.726  58.328 -205.990 -97.211 -166.416
+[INFO] [1759303702.090953542]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303702.330998799]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303702.433845710]: [trajectory] [12 : 2.988 : 0.365] -241.776   5.736  58.552 -207.413 -96.998 -168.949
+[INFO] [1759303702.455952286]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303702.707981088]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303702.799215394]: [trajectory] [13 : 3.353 : 0.365] -233.007   4.747  58.775 -208.836 -96.784 -171.483
+[INFO] [1759303702.821030265]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303703.072926653]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303703.164567256]: [trajectory] [14 : 3.878 : 0.525] -224.238   3.757  58.999 -210.259 -96.571 -174.017
+[INFO] [1759303703.186057899]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303703.437952641]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303703.690012299]: [trajectory] [15 : 4.174 : 0.295] -221.203   5.696  58.485 -207.484 -97.053 -168.636
+[INFO] [1759303703.712003332]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303703.962941188]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303703.985076603]: [trajectory] [16 : 4.345 : 0.171] -218.169   7.636  57.970 -204.710 -97.535 -163.255
+[INFO] [1759303704.007094678]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303704.259010198]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303704.259058003]: [trajectory] [17 : 4.479 : 0.032] -215.134   9.575  57.455 -201.936 -98.018 -157.873
+[INFO] [1759303704.281062767]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303704.429955348]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303704.430104883]: [trajectory] [18 : 4.606 : -0.013] -212.100  11.515  56.940 -199.162 -98.500 -152.492
+[INFO] [1759303704.452006229]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303704.563944061]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303704.564043867]: [trajectory] [19 : 4.732 : -0.020] -209.065  13.454  56.426 -196.387 -98.982 -147.111
+[INFO] [1759303704.586303742]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303704.690988192]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303704.691069465]: [trajectory] [20 : 4.859 : -0.021] -206.031  15.394  55.911 -193.613 -99.464 -141.730
+[INFO] [1759303704.713071119]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303704.817029021]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303704.817076550]: [trajectory] [21 : 4.985 : -0.021] -202.996  17.333  55.396 -190.839 -99.946 -136.348
+[INFO] [1759303704.839117968]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303704.943973049]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303704.944047533]: [trajectory] [22 : 5.111 : -0.021] -199.962  19.273  54.882 -188.065 -100.428 -130.967
+[INFO] [1759303704.966025370]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303705.070038640]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303705.070116565]: [trajectory] [23 : 5.251 : -0.008] -196.927  21.212  54.367 -185.290 -100.910 -125.586
+[INFO] [1759303705.092170679]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303705.197064463]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303705.197201063]: [trajectory] [24 : 5.431 : 0.045] -193.892  23.152  53.852 -182.516 -101.392 -120.205
+[INFO] [1759303705.219017688]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303705.337081799]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303705.337152371]: [trajectory] [25 : 5.867 : 0.341] -190.858  25.091  53.338 -179.742 -101.875 -114.823
+[INFO] [1759303705.359094687]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303705.516095441]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303706.081543519]: Controller 'dsr_joint_trajectory_controller' successfully finished
+[INFO] [1759303706.310822171]: Completed trajectory execution with status SUCCEEDED ...
+[INFO] [1759303706.310996118]: Execution completed: SUCCEEDED
+[INFO] [1759303706.311296511]: Received event 'stop'
+[INFO] [1759303706.410850728]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[WARN] [1759303706.411091539]: Cannot find planning configuration for group 'arm' using planner 'RRTStartkConfigDefault'. Will use defaults instead.
+[INFO] [1759303706.411932089]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[INFO] [1759303706.412055389]: arm/arm: Starting planning with 1 states already in datastructure
+[INFO] [1759303706.422936564]: arm/arm: Created 4 states (2 start + 2 goal)
+[INFO] [1759303706.422962688]: Solution found in 0.010957 seconds
+[INFO] [1759303706.427015607]: SimpleSetup: Path simplification took 0.004012 seconds and changed from 3 to 2 states
+[INFO] [1759303706.429872530]: Execution request received
+[INFO] [1759303706.511167119]: callback: Trajectory received
+[INFO] [1759303706.511197428]:   goal->trajectory.points.size() =47
+[INFO] [1759303706.511205026]:   goal->trajectory.joint_names.size() =6
+[INFO] [1759303706.511219266]: [trajectory] [00 : 0.000 : -0.000] -190.852  25.095  53.337 -179.740 -101.876 -114.821
+[INFO] [1759303706.533198670]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303706.534171077]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303706.534208531]: [trajectory] [01 : 0.383 : 0.360] -186.703  24.549  52.177 -175.833 -99.661 -112.325
+[INFO] [1759303706.556336196]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303706.784095885]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303706.894253637]: [trajectory] [02 : 0.556 : 0.173] -182.554  24.004  51.018 -171.926 -97.447 -109.829
+[INFO] [1759303706.916124966]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303707.167133831]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303707.167207530]: [trajectory] [03 : 0.729 : 0.073] -178.405  23.459  49.858 -168.018 -95.232 -107.333
+[INFO] [1759303707.189127629]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303707.341155296]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303707.341220087]: [trajectory] [04 : 0.901 : 0.072] -174.256  22.913  48.699 -164.111 -93.017 -104.837
+[INFO] [1759303707.363145790]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303707.514227779]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303707.514272201]: [trajectory] [05 : 1.074 : 0.071] -170.107  22.368  47.539 -160.203 -90.803 -102.341
+[INFO] [1759303707.536120316]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303707.686075298]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303707.686145970]: [trajectory] [06 : 1.247 : 0.072] -165.958  21.822  46.380 -156.296 -88.588 -99.845
+[INFO] [1759303707.708139461]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303707.859220184]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303707.859278000]: [trajectory] [07 : 1.420 : 0.072] -161.809  21.277  45.221 -152.388 -86.373 -97.349
+[INFO] [1759303707.881264232]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303708.033159148]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303708.033234020]: [trajectory] [08 : 1.593 : 0.071] -157.660  20.731  44.061 -148.481 -84.159 -94.853
+[INFO] [1759303708.055278665]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303708.206232534]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303708.206292025]: [trajectory] [09 : 1.766 : 0.071] -153.511  20.186  42.902 -144.573 -81.944 -92.357
+[INFO] [1759303708.228135017]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303708.378260818]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303708.378371359]: [trajectory] [10 : 1.939 : 0.072] -149.362  19.640  41.742 -140.666 -79.729 -89.861
+[INFO] [1759303708.400275347]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303708.551229960]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303708.551342716]: [trajectory] [11 : 2.112 : 0.072] -145.213  19.095  40.583 -136.758 -77.514 -87.364
+[INFO] [1759303708.573390241]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303708.723142735]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303708.723273914]: [trajectory] [12 : 2.284 : 0.072] -141.064  18.550  39.423 -132.851 -75.300 -84.868
+[INFO] [1759303708.745163604]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303708.896166440]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303708.896218625]: [trajectory] [13 : 2.457 : 0.072] -136.915  18.004  38.264 -128.943 -73.085 -82.372
+[INFO] [1759303708.918238977]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303709.070193256]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303709.070252121]: [trajectory] [14 : 2.630 : 0.071] -132.766  17.459  37.105 -125.036 -70.870 -79.876
+[INFO] [1759303709.092217497]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303709.243417169]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303709.243460525]: [trajectory] [15 : 2.803 : 0.071] -128.618  16.913  35.945 -121.128 -68.656 -77.380
+[INFO] [1759303709.265325948]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303709.415267722]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303709.415373540]: [trajectory] [16 : 2.976 : 0.072] -124.469  16.368  34.786 -117.221 -66.441 -74.884
+[INFO] [1759303709.437240977]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303709.588177448]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303709.588302183]: [trajectory] [17 : 3.149 : 0.072] -120.320  15.822  33.626 -113.313 -64.226 -72.388
+[INFO] [1759303709.610358700]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303709.760112786]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303709.760172641]: [trajectory] [18 : 3.322 : 0.073] -116.171  15.277  32.467 -109.406 -62.012 -69.892
+[INFO] [1759303709.782287685]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303709.933144716]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303709.933230695]: [trajectory] [19 : 3.495 : 0.073] -112.022  14.731  31.307 -105.498 -59.797 -67.396
+[INFO] [1759303709.955289727]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303710.107306884]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303710.107357109]: [trajectory] [20 : 3.667 : 0.071] -107.873  14.186  30.148 -101.591 -57.582 -64.900
+[INFO] [1759303710.129355017]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303710.280209111]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303710.280347798]: [trajectory] [21 : 3.840 : 0.071] -103.724  13.640  28.989 -97.683 -55.367 -62.404
+[INFO] [1759303710.302284816]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303710.452141598]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303710.452182219]: [trajectory] [22 : 4.013 : 0.072] -99.575  13.095  27.829 -93.776 -53.153 -59.908
+[INFO] [1759303710.464272483]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303710.625283870]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303710.625384715]: [trajectory] [23 : 4.186 : 0.072] -95.426  12.550  26.670 -89.868 -50.938 -57.411
+[INFO] [1759303710.647380354]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303710.789260228]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303710.789307162]: [trajectory] [24 : 4.359 : 0.081] -91.277  12.004  25.510 -85.961 -48.723 -54.915
+[INFO] [1759303710.811232573]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303710.970182797]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303710.970250468]: [trajectory] [25 : 4.532 : 0.073] -87.128  11.459  24.351 -82.053 -46.509 -52.419
+[INFO] [1759303710.992275735]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303711.144313319]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303711.144432450]: [trajectory] [26 : 4.705 : 0.072] -82.979  10.913  23.191 -78.146 -44.294 -49.923
+[INFO] [1759303711.166349665]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303711.317298233]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303711.317403332]: [trajectory] [27 : 4.878 : 0.072] -78.830  10.368  22.032 -74.238 -42.079 -47.427
+[INFO] [1759303711.339327812]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303711.489279048]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303711.489377413]: [trajectory] [28 : 5.050 : 0.072] -74.681   9.822  20.873 -70.331 -39.865 -44.931
+[INFO] [1759303711.511290447]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303711.662326927]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303711.662452631]: [trajectory] [29 : 5.223 : 0.072] -70.532   9.277  19.713 -66.424 -37.650 -42.435
+[INFO] [1759303711.674274792]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303711.836322044]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303711.836402088]: [trajectory] [30 : 5.396 : 0.071] -66.383   8.731  18.554 -62.516 -35.435 -39.939
+[INFO] [1759303711.858445876]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303711.999292817]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303711.999340012]: [trajectory] [31 : 5.569 : 0.081] -62.234   8.186  17.394 -58.609 -33.220 -37.443
+[INFO] [1759303712.021425514]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303712.181267510]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303712.181382239]: [trajectory] [32 : 5.742 : 0.072] -58.085   7.640  16.235 -54.701 -31.006 -34.947
+[INFO] [1759303712.203339774]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303712.354374923]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303712.354489222]: [trajectory] [33 : 5.915 : 0.072] -53.936   7.095  15.075 -50.794 -28.791 -32.451
+[INFO] [1759303712.376397262]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303712.526415041]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303712.526469530]: [trajectory] [34 : 6.088 : 0.072] -49.787   6.550  13.916 -46.886 -26.576 -29.955
+[INFO] [1759303712.548358305]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303712.699354015]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303712.699475819]: [trajectory] [35 : 6.261 : 0.072] -45.638   6.004  12.757 -42.979 -24.362 -27.458
+[INFO] [1759303712.721416198]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303712.873258241]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303712.873342044]: [trajectory] [36 : 6.433 : 0.071] -41.489   5.459  11.597 -39.071 -22.147 -24.962
+[INFO] [1759303712.895484418]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303713.046264992]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303713.046323950]: [trajectory] [37 : 6.606 : 0.071] -37.340   4.913  10.438 -35.164 -19.932 -22.466
+[INFO] [1759303713.069013462]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303713.218375011]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303713.218541542]: [trajectory] [38 : 6.779 : 0.072] -33.191   4.368   9.278 -31.256 -17.717 -19.970
+[INFO] [1759303713.240315847]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303713.391355530]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303713.391457503]: [trajectory] [39 : 6.952 : 0.072] -29.042   3.822   8.119 -27.349 -15.503 -17.474
+[INFO] [1759303713.413377366]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303713.563291391]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303713.563359675]: [trajectory] [40 : 7.125 : 0.073] -24.893   3.277   6.959 -23.441 -13.288 -14.978
+[INFO] [1759303713.586417860]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303713.736312209]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303713.736417511]: [trajectory] [41 : 7.298 : 0.073] -20.744   2.731   5.800 -19.534 -11.073 -12.482
+[INFO] [1759303713.758650982]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303713.911436024]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303713.911483154]: [trajectory] [42 : 7.471 : 0.070] -16.595   2.186   4.640 -15.626  -8.859  -9.986
+[INFO] [1759303713.933414853]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303714.083322494]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303714.083402739]: [trajectory] [43 : 7.644 : 0.071] -12.446   1.641   3.481 -11.719  -6.644  -7.490
+[INFO] [1759303714.106443558]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303714.256428824]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303714.256486295]: [trajectory] [44 : 7.816 : 0.071]  -8.297   1.095   2.322  -7.811  -4.429  -4.994
+[INFO] [1759303714.278367163]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303714.429332170]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303714.429385244]: [trajectory] [45 : 7.989 : 0.071]  -4.148   0.550   1.162  -3.904  -2.215  -2.498
+[INFO] [1759303714.451453497]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303714.601459700]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303714.601509830]: [trajectory] [46 : 8.372 : 0.282]   0.001   0.004   0.003   0.004   0.000  -0.002
+[INFO] [1759303714.623449108]: On Monitor State
+[callback OnMonitoringStateCB] current state: (2) MOVING
+[INFO] [1759303714.774462384]: On Monitor State
+[callback OnMonitoringStateCB] current state: (1) STANDBY
+[INFO] [1759303715.306265173]: Controller 'dsr_joint_trajectory_controller' successfully finished
+[INFO] [1759303715.510986202]: Completed trajectory execution with status SUCCEEDED ...
+[INFO] [1759303715.511179220]: Execution completed: SUCCEEDED
+[INFO] [1759303715.511539191]: Received event 'stop'
+^C[dsr01a0509/rviz_vinh_Nitro_AN515_57_122949_2760277983550767018-6] killing on exit
+[dsr01a0509/move_group-5] killing on exit
+[dsr01a0509/robot_state_publisher-4] killing on exit
+[dsr01a0509-3] killing on exit
+[INFO] [1759303807.713424641]: [dsr_control] shutdown time! (sig = 2)
+[INFO] [1759303807.713451414]: [dsr_control] shutdown time! (sig = 2)
+[INFO] [1759303807.713461942]: [dsr_control] shutdown time! (sig = 2)
+[dsr01a0509/controller_spawner-2] killing on exit
+[INFO] [1759303807.713827]: Shutting down spawner. Stopping and unloading controllers...
+[INFO] [1759303807.714727]: Stopping all controllers...
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.49/containers/json?filters=%7B%22name%22%3A%7B%22emulator%22%3Atrue%7D%7D": dial unix /var/run/docker.sock: connect: permission denied
+[WARN] [1759303807.722807394]: [dsr_control] The emulator container is not running.
+[WARN] [1759303807.905504]: Controller Spawner error while taking down controllers: transport error completing service call: unable to receive data from sender, check sender's logs for details
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+vinh@vinh-Nitro-AN515-57:~$ 
+

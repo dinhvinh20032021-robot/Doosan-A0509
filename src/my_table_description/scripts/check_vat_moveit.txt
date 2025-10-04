@@ -1,0 +1,45 @@
+box1 size (0.2 0.2 0.2) position (0.11 -0.78 0.13) rotation(0 0 0)
+box2 size (0.2 0.2 0.2) position (0.6 -0.34 0.73) rotation(0 0 0)
+box3 size (0.2 0.2 0.2) position (-0.86 -0.89 0.10) rotation(0 0 0)
+box4 size (0.2 0.2 0.2) position (0.66 0.31 1.08 ) rotation(0 0 0)
+box5 size (0.2 0.2 0.2) position (0.12 -0.79 0.45) rotation(0 0 0)
+box6 size (0.2 0.2 0.2) position (-0.84 0.00 0.11) rotation(0 0 0)
+box7 size (0.2 0.2 0.2) position (-0.84 0.00 0.41) rotation(0 0 0)
+box8 size (0.2 0.2 0.2) position (-0.68 0.00 1.20) rotation(0 0 0)
+box9 size (0.2 0.2 0.2) position (0.00 0.94 0.12) rotation(0 0 0)
+box10 size (0.2 0.2 0.2) position (-0.92 0.76 0.11) rotation(0 0 0)
+box11 size (0.2 0.2 0.2) position (-0.96 0.79 0.43) rotation(0 0 0)
+box12 size (0.2 0.2 0.2) position (-0.70 -0.76 0.41) rotation(0 0 0)
+box13 size (0.2 0.2 0.2) position (-0.27 0.72 0.54) rotation(0 0 0)
+box14 size (0.2 0.2 0.2) position (0.00 -0.52 1.02) rotation(0 0 0)
+box15 size (0.2 0.2 0.2) position (-0.11 0.76 1.09) rotation(0 0 0)
+box16 size (0.2 0.2 0.2) position (0.84 0.51 0.12) rotation(0 0 0)
+box17 size (0.2 0.2 0.2) position (0.72 -0.27 0.09) rotation(0 0 0)
+box18 size (0.2 0.2 0.2) position (0.61 0.10 0.52) rotation(0 0 0)
+box19 size (0.2 0.2 0.2) position (0.00 0.09 1.67) rotation(0 0 0)
+
+home  = [0 0 0 0 0 0]
+    goal1 = [-2.805 0.619 1.374 -0.004 1.191 -3.252]
+    goal2 = [-3.850 0.619 1.374 -0.004 1.191 -3.252]
+    sequence = [home goal1 goal2 home]
+
+    goal3 = [-2.480 0.619 1.374 -0.004 1.191 -3.252]
+
+sequence bắt đầu từ 
+home ( 0 0 0 0 0 0) 
+-> goal1(4.242 ,0.449, 1.012, -3.106, --1.689, -1.534 )
+->goal2(5.379 ,0.509 ,0.918, -3.123 ,-1.722, -1.484)
+->goal3(3.375,-0.830,-0.938,3.156,1.350,-4.539)
+->goal4(1.4, 0.291, 0.773, -3.097, -2.069, -0.210)
+->goal5(-3.840, 0.616, 0.672, 0.012, 1.814, -2.326)
+->goal6(-5.151, -0.450, -1.00, -6.264, -1.692, -2.384)
+->home
+
+//py
+    seq = [
+        [-1.454, 0.266, 1.233, -0.039, 1.567, 0.010],    # goal1
+        [-2.945, -0.769, -1.082, 3.094, 1.222, 0.177],   # goal2
+        [-5.153, 0.437, 0.938, -3.137, -1.772, -2.044],  # goal3
+        [-3.331, 0.438, 0.931, -3.137, -1.778, -2.004],  # goal4
+        [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]                   # về home cuối
+    ]
